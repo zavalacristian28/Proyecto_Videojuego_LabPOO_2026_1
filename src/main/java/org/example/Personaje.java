@@ -16,6 +16,10 @@ public class Personaje implements Destruible, ElementoDinamico {
     public String getNombre() { return nombre; }
     public int getVida() { return vida; }
 
+    // NUEVO MÉTODO AÑADIDO PARA LA PRÁCTICA 10
+    public void setVida(int vida) {
+        this.vida = vida;
+    }
     public void recibirDaño(int dano) {
         this.vida -= dano;
         if (this.vida < 0) this.vida = 0;
